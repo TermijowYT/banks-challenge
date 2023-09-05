@@ -17,7 +17,7 @@ npm i -g @nest/cli
 
 4. Ir a la carpeta 
 ```
-cd Documents/Dev/Projects/Fernando/nestjs/03-pokedex/
+  cd ../banks-challenge
 ```
 4. Iniciar el servidor 
 ```
