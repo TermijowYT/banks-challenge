@@ -31,7 +31,7 @@ docker-compose up -d
 
 6. Iniciar el SEED de pruebas
 ```
-http://localhost:3000/api/v2/seed/
+http://localhost:3000/seed/
 ```
 ## Stack Usado
 - MongoDB
