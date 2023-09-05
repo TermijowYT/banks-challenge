@@ -9,7 +9,6 @@ export class CustomNumberValidator implements ValidatorConstraintInterface {
     const regex = /^[0-9]{9}-[0-9]?$/;
     return typeof value === 'string' && regex.test(value);
   }
-
   defaultMessage(args: ValidationArguments) {
     return 'El formato del número no es válido. Debe tener 9 dígitos, un guión y un número opcional al final.';
   }

@@ -24,7 +24,7 @@ export class Account extends Document {
         unique: true,
         index:true,
     })
-    phone: number;
+    bank: string;
     @Prop({
         unique: true,
         index:true,
@@ -34,7 +34,7 @@ export class Account extends Document {
         unique: true,
         index:true,
     })
-    bank: string;
+    phone: number;
 }
 
 export const AccountSchema = SchemaFactory.createForClass(Account);
