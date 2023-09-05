@@ -24,14 +24,18 @@ export class AccountService {
 
     try {
       const Account = await this.AccountModel.create(createAccountDto);
-      return Account;
+      return `
+      Los datos se guardaron exitosamente!
+      ${JSON.stringify(Account)}
+      `;
     } catch (error) {
       this.handleExceptions(error);
     }
   }
 
   findAll() {
-    return `This action returns all account`;
+
+    return this.AccountModel.find()
   }
 
   findOne(id: number) {

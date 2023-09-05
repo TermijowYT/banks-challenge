@@ -33,6 +33,11 @@ docker-compose up -d
 ```
 http://localhost:3000/seed/
 ```
+
+7. Iniciar postman para probar las peticiones
+```
+https://www.postman.com/avionics-meteorologist-31434045/workspace/dev/request/28294845-b157c121-73a6-481f-882a-991cde59bccb
+```
 ## Stack Usado
 - MongoDB
 - Nest
