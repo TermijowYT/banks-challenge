@@ -40,7 +40,7 @@ export class AccountService {
 
   findOne(id: number) {
     const findBank = id
-    return ;
+    return console.log("nada");
   }
 
   update(id: number, updateAccountDto: UpdateAccountDto) {
