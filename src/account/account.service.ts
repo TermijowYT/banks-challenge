@@ -6,14 +6,14 @@ import {
 import { CreateAccountDto } from './dto/create-account.dto';
 import { UpdateAccountDto } from './dto/update-account.dto';
 import { Model } from 'mongoose';
-import { Account } from './entities/account.entity';
+import { Accounts } from './entities/account.entity';
 import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
 export class AccountService {
   constructor(
-    @InjectModel(Account.name)
-    private readonly AccountModel: Model<Account>,
+    @InjectModel(Accounts.name)
+    private readonly AccountModel: Model<Accounts>,
   ) {}
 
   async create(createAccountDto: CreateAccountDto) {
@@ -39,7 +39,8 @@ export class AccountService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} account`;
+    const findBank = id
+    return ;
   }
 
   update(id: number, updateAccountDto: UpdateAccountDto) {

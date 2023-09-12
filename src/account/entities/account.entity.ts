@@ -2,7 +2,7 @@ import { InjectModel, Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document, Model, Types } from "mongoose";
 
 @Schema()
-export class Account extends Document {
+export class Accounts extends Document {
 
 
     @Prop({
@@ -29,7 +29,7 @@ export class Account extends Document {
         unique: true,
         index:true,
     })
-    accountNumber: string;
+    accountsNumber: string;
     @Prop({
         unique: true,
         index:true,
@@ -37,4 +37,5 @@ export class Account extends Document {
     phone: number;
 }
 
-export const AccountSchema = SchemaFactory.createForClass(Account);
+export const AccountsSchema = SchemaFactory.createForClass(Accounts);
+console.log(Accounts.name);
